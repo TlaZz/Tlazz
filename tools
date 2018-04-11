@@ -266,5 +266,7 @@ sleep 1
 echo -e $green" Ataw skalian " echo -e $red" mati "
 sleep 1
 echo -e $cyan" canda :v, jgn dibawa serius :v "
-exit
 fi
+
+clear
+exit
