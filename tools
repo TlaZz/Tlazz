@@ -97,6 +97,105 @@ sleep 2
 fi
 
 if [ $act = 5 ] || [ $act = 5 ]
+pkg install figlet
+
+blue='\e[0;34'
+cyan='\e[0;36m'
+green='\e[0;34m'
+okegreen='\033[92m'
+lightgreen='\e[1;32m'
+white='\e[1;37m'
+red='\e[1;31m'
+yellow='\e[1;33m'
+
+echo -e $red"========================================================"
+figlet TLA.ZZ
+echo -e $white"========================================================"
+echo -e $okegreen"#Tools by Tla.zz"
+echo -e $yellow"#Thx to ZeroSvn & Mrcakil"
+echo -e $red"#Babby"$white"Cyber"$red"Team"
+echo -e $cyan"#Spensaku"
+echo -e $red"#8"$white"Heaven";
+echo -ne "${lightgreen}Today is:\t\t${red}" `date`; echo ""
+echo -e "${lightgreen}Kernel Information: \t${red}" `uname -smr`
+export PS1=" \[\$red\]Root\[\$white\]@\[\$red\]Tla.zz\[\$white\]:\[\$red\]\w \[\$white\]\\$ \[\$red\] ";
+
+echo -e $white" TOOLS : "
+
+echo -e $blue" 01) Mrcakil Tools "
+echo -e $blue" 02) Mining Dogecoin "
+echo -e $blue" 03) Auto Like Ig ZeroSvn "
+echo -e $blue" 04) Mrcakil Toolsbox "
+echo -e $blue" 05) Spammer Grab p4kl0nc4t "
+echo -e $blue" 06) Instabot "
+echo -e $blue" 07) Bom Sms ZeroSvn "
+echo -e $blue" 08) Dork Scanner "
+echo -e $blue" 09) Exit "
+echo -e $white
+read -p " Pilih nomor tools> " act;
+
+if [ $act = 1 ] || [ $act = 1 ]
+then
+clear
+echo -e $red" Installing Mrcakil Tools..."
+pkg install git
+pkg install php
+pkg install python
+pkg install wget
+git clone http://github.com/mrcakil/Mrcakil
+cd ~/Mrcakil
+chmod 777 tools
+echo -e $blue" [+]Done Install "
+echo -e $blue" [+]Pergi ke folder Mrcakil "
+echo -e $blue" [+]Cara pakai= ketik (./tools) tanpa tanda kurung "
+sleep 2
+fi
+
+if [ $act = 2 ] || [ $act = 2 ]
+then
+clear
+echo -e $red" Installing Dogecoin Miner"
+pkg upgrade && pkg install lynx curl libcurl php php-dev wget w3m
+pkg install git
+pkg install php
+git clone https://github.com/aschfound/auto
+cd ~/auto
+echo -e $blue" [+]Done Install "
+echo -e $blue" [+]Pergi ke folder auto "
+echo -e $blue" [+]Cara pake tinggal ketik (php asch.php) tanpa tanda kurung "
+sleep 2
+fi
+
+if [ $act = 3 ] || [ $act = 3 ]
+then
+clear
+echo -e $red" Installing AutoLikeIg "
+pkg install git
+pkg install php
+git clone https://github.com/zerosvn/AutoLikeIg
+cd ~/AutoLikeIg
+echo -e $blue" [+]Done Install "
+echo -e $blue" [+]Pergi ke folder AutoLikeIg "
+echo -e $blue" [+]Cara pake tinggal ketik (php like.php) tanpa tanda kurung "
+echo -e $blue" [+]NOTE= 1x submit maksimal 50 like "
+sleep 2
+fi
+
+if [ $act = 4 ] || [ $act = 4 ]
+then
+clear
+echo -e $red" Installing ToolBox"
+pkg install git
+git clone https://github.com/mrcakil/ToolsBox-Exploiter
+cd ~/ToolsBox-Exploiter
+chmod 777 tools
+echo -e $blue" [+]Done Install "
+echo -e $blue" [+]Pergi ke folder ToolsBox-Exploiter "
+echo -e $blue" [+]Cara pake tinggal ketik (./tools) tanpa tanda kurung "
+sleep 2
+fi
+
+if [ $act = 5 ] || [ $act = 5 ]
 then
 clear
 echo -e $red" Installing Spammer Grab"
@@ -143,11 +242,16 @@ fi
 
 if [ $act = 8 ] || [ $act = 8 ]
 then
+clear
+sleep 1
+echo -e $red" Installing Dork Scanner "
 pkg install git
-git clone https://github.com/TlaZz/Tools
+git clone https://github.com/TlaZz/Tools/
+cd ~/Tools
 echo -e $blue" [+]Done Install "
 echo -e $blue" [+]Pergi ke folder Tools "
 echo -e $blue" [+]Cara pake ketik php Scan php dork "
+sleep 2
 fi
 
 if [ $act = 9 ] || [ $act = 9 ]
