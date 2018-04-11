@@ -263,7 +263,7 @@ echo -e $red" Follow Ig : "$white" rafif.suryawan "
 sleep 2
 echo -e $lime" Jangan lupa balik lagi... "
 sleep 1
-echo -e $green" Ataw skalian "$red" mati "
+echo -e $green" Ataw skalian " echo -e $red" mati "
 sleep 1
 echo -e $cyan" canda :v, jgn dibawa serius :v "
 exit
