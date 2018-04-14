@@ -34,7 +34,7 @@ echo -e $blue" 06) Bom Sms ZeroSvn "
 echo -e $blue" 07) Dork Scanner "
 echo -e $blue" 08) Shell Checker "
 echo -e $blue" 09) Auto Visitor "
-echo -e $blue" 10) Exit "
+echo -e $blue"(10) Exit "
 echo -e $white
 read -p " Pilih nomor tools> " act;
 
