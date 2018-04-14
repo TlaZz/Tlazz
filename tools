@@ -1,0 +1,183 @@
+pkg install figlet
+pkg install ruby
+gem install lolcat
+
+blue='\e[0;34'
+cyan='\e[0;36m'
+green='\e[0;34m'
+okegreen='\033[92m'
+lightgreen='\e[1;32m'
+white='\e[1;37m'
+red='\e[1;31m'
+yellow='\e[1;33m'
+
+echo -e $red"========================================================"
+figlet TLA.ZZ | lolcat
+echo -e $white"========================================================"
+echo -e $okegreen"#Tools by Tla.zz"
+echo -e $yellow"#Thx to ZeroSvn & Mrcakil"
+echo -e $red"#Babby"$white"Cyber"$red"Team"
+echo -e $cyan"#Spensaku"
+echo -e $red"#8"$white"Heaven";
+echo -ne "${lightgreen}Today is:\t\t${red}" `date`; echo ""
+echo -e "${lightgreen}Kernel Information: \t${red}" `uname -smr`
+export PS1=" \[\$red\]Root\[\$white\]@\[\$red\]Tla.zz\[\$white\]:\[\$red\]\w \[\$white\]\\$ \[\$red\] ";
+
+echo -e $white" TOOLS : "
+
+echo -e $blue" 01) Mrcakil Tools "
+echo -e $blue" 02) Mining Dogecoin "
+echo -e $blue" 03) Mrcakil Toolsbox "
+echo -e $blue" 04) Spammer Grab p4kl0nc4t "
+echo -e $blue" 05) Instabot "
+echo -e $blue" 06) Bom Sms ZeroSvn "
+echo -e $blue" 07) Dork Scanner "
+echo -e $blue" 08) Shell Checker "
+echo -e $blue" 09) Auto Visitor "
+echo -e $blue" 10) Exit "
+echo -e $white
+read -p " Pilih nomor tools> " act;
+
+if [ $act = 1 ] || [ $act = 1 ]
+then
+clear
+echo -e $red" Installing Mrcakil Tools..."
+pkg install git
+pkg install php
+pkg install python
+pkg install wget
+git clone http://github.com/mrcakil/Mrcakil
+cd ~/Mrcakil
+chmod 777 tools
+echo -e $blue" [+]Done Install "
+echo -e $blue" [+]Pergi ke folder Mrcakil "
+echo -e $blue" [+]Cara pakai= ketik (./tools) tanpa tanda kurung "
+sleep 5
+fi
+
+if [ $act = 2 ] || [ $act = 2 ]
+then
+clear
+echo -e $red" Installing Dogecoin Miner"
+pkg upgrade && pkg install lynx curl libcurl php php-dev wget w3m
+pkg install git
+pkg install php
+git clone https://github.com/aschfound/auto
+cd ~/auto
+echo -e $blue" [+]Done Install "
+echo -e $blue" [+]Pergi ke folder auto "
+echo -e $blue" [+]Cara pake tinggal ketik (php asch.php) tanpa tanda kurung "
+sleep 5
+fi
+
+if [ $act = 3 ] || [ $act = 3 ]
+then
+clear
+echo -e $red" Installing ToolBox"
+pkg install git
+git clone https://github.com/mrcakil/ToolsBox-Exploiter
+cd ~/ToolsBox-Exploiter
+chmod 777 tools
+echo -e $blue" [+]Done Install "
+echo -e $blue" [+]Pergi ke folder ToolsBox-Exploiter "
+echo -e $blue" [+]Cara pake tinggal ketik (./tools) tanpa tanda kurung "
+sleep 5
+fi
+
+if [ $act = 4 ] || [ $act = 4 ]
+then
+clear
+echo -e $red" Installing Spammer Grab"
+pkg install git
+pip2 install requests
+pkg install python
+pkg install python2
+git clone https://github.com/p4kl0nc4t/Spammer-Grab
+cd ~/Spammer-Grab
+echo -e $blue" [+]Done Install "
+echo -e $blue" [+]Pergi ke folder Spammer-Grab "
+echo -e $blue" [+]Cara pake ketik (python spammer.py 62xxxxx) tanpa tanda kurung "
+sleep 5
+fi
+
+if [ $act = 5 ] || [ $act = 5 ]
+then
+clear
+echo -e $red" Installing Instabot"
+apt-get update && apt-get upgrade
+pkg install python2
+apt-get install git
+apt-get install nano
+git clone https://github.com/instabot-py/instabot.py
+cd ~/instabot.py
+echo -e $blue" [+]Done Install "
+echo -e $blue" [+]Pergi ke folder instabot.py "
+echo -e $blue" [+]Cara pake ketik nano example.py "
+echo -e $blue" [+]Masukkan Username dan Password "
+sleep 5
+fi
+
+if [ $act = 6 ] || [ $act = 6 ]
+then
+clear
+pkg install git
+echo -e $red" Installing Bom Sms "
+git clone https://github.com/zerosvn/bom-sms/
+cd ~/bom-sms
+echo -e $blue" [+]Done Install "
+echo -e $blue" [+]Pergi ke folder bom-sms "
+echo -e $blue" [+]Cara Pake ketik php jdid.php untuk spam sms jd.id(max 60/submit) atau ketik php phd.php untuk spam sms phd(max 60/submit) "
+fi
+
+if [ $act = 7 ] || [ $act = 7 ]
+then
+clear
+echo -e $red" Installing Dork Scanner "
+pkg install git
+git clone https://github.com/TlaZz/Tools/
+cd ~/Tools
+echo -e $blue" [+]Done Install "
+echo -e $blue" [+]Pergi ke folder Tools "
+echo -e $blue" [+]Cara pake ketik php Scan.php dork "
+sleep 5
+fi
+
+if [ $act = 8 ] || [ $act = 8 ]
+then
+clear
+echo -e $red" Installing Shell Checker by Kyuoko "
+git clone https://github.com/kyuoko/Shell-Finder
+pkg install python
+pkg install python2
+echo -e $blue" [+]Done Install "
+echo -e $blue" [+]Pergi ke folder Shell-finder "
+echo -e $blue" [+]Cara pake ketik python2 shellfinder.py "
+fi
+
+if [ $act = 9 ] || [ $act = 9 ]
+then
+clear
+echo -e $red" Installing Auto Visitor "
+pkg install python
+pkg install python2
+git clone https://github.com/TlaZz/AutoVisitor
+echo -e $blue" [+]Done Install "
+echo -e $blue" [+]Pergi ke folder AutoVisitor "
+echo -e $blue" [+]Cara Pake ketik python2 zz.py proxylist.txt "
+fi
+
+if [ $act = 10 ] || [ $act = 10 ]
+then
+clear
+sleep 1
+echo -e $cyan" Makasih udh pake tools ini "
+sleep 1
+echo -e $red" Follow Ig : "$white" rafif.suryawan "
+sleep 2
+echo -e $lime" Jangan lupa balik lagi... "
+sleep 1
+echo -e $green" Ataw skalian "$red" mati "
+sleep 1
+echo -e $cyan" canda :v, jgn dibawa serius :v "
+exit
+fi
